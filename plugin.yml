@@ -3,22 +3,21 @@ main: anirudh246/StaffChat/main
 version: 1.0.0
 api: [3.9.1]
 
+
 load: POSTWORLD
 author: anirudh246
 description: Talk to your staff privately.
 website: https://github.com/anirudh246/StaffChat
+
+
 commands: 
  sc:
   description: Lets you enable the staff chat.
   usage: "Usage: .sc {message}"
   permission: hgk.staffchat
+  
+  
 permissions:
  hgk.staffchat:
   description: "Allows the staff to use the StaffChat"
   default: false
-
-
-
-
- 
- 
