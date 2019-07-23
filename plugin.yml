@@ -1,18 +1,24 @@
 name: StaffChat
-main: StaffChat\src
+main: anirudh246/StaffChat/main
 version: 1.0.0
 api: [3.9.1]
 
 load: POSTWORLD
-author: PocketMine Team
-description: Example plugin showing the new API
-website: https://github.com/PocketMine/ExamplePlugin
-commands:
- example:
-  description: Example command
-  usage: "Usage: /example"
-  permission: exampleplugin.command.example
+author: anirudh246
+description: Talk to your staff privately.
+website: https://github.com/anirudh246/StaffChat
+commands: 
+ sc:
+  description: Lets you enable the staff chat.
+  usage: "Usage: .sc {message}"
+  permission: hgk.staffchat
 permissions:
- exampleplugin.command.example:
-  description: "Allows the user to run the example command"
-  default: true
+ hgk.staffchat:
+  description: "Allows the staff to use the StaffChat"
+  default: false
+
+
+
+
+ 
+ 
