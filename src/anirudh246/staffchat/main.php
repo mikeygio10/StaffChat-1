@@ -11,7 +11,7 @@ use pocketmine/command/CommandSender;
  
 class main extends PluginBase implements Listener
 {
-     public $chatMessage = array()
+     public $msg= array();
      public function onLoad(){
 	}
 	public function onEnable(){
@@ -24,7 +24,11 @@ class main extends PluginBase implements Listener
 	
 	
   public function staffMessage(){
-	 $array =explode()
+	
+	  $array = $msg;
+	$array = explode(); 
+        array_shift($array); 
+        $msg = implode(); 
 	
 	  
       foreach(Server::getInstance()->getLoggedInPlayers() as $player){
