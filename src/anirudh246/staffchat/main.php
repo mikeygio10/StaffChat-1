@@ -26,7 +26,7 @@ class main extends PluginBase implements Listener
   public function staffMessage(){
 	
 	  $array = $msg;
-	$array = explode(); 
+	$array = explode(" ",$msg); 
         array_shift($array); 
         $msg = implode(); 
 	
