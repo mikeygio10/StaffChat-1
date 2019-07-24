@@ -1,7 +1,7 @@
   
 <?php
 namespace anirudh246/StaffChat
-use _64FF00\PurePerms\PPGroup; 
+	
 use pocketmine/plugin/PluginBase;
 use pocketmine/event/Listener;
 use pocketmine/event/player/PlayerChatEvent;
@@ -22,7 +22,10 @@ class main extends PluginBase implements Listener
 		
    }
 	
+	
   public function staffMessage(){
+	 $array =explode()
+	
 	  
       foreach(Server::getInstance()->getLoggedInPlayers() as $player){
         if($player->hasPermission("hgk.staffchat.see")) $player->sendMessage(TextFormat::RED("$msg"));
