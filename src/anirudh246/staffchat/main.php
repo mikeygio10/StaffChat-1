@@ -1,5 +1,4 @@
-  
-<?php
+  <?php
 namespace anirudh246/StaffChat
 	
 use pocketmine/plugin/PluginBase;
@@ -11,7 +10,6 @@ use pocketmine/command/CommandSender;
  
 class main extends PluginBase implements Listener
 {
-     public $msg= array();
      public function onLoad(){
 	}
 	public function onEnable(){
@@ -23,18 +21,19 @@ class main extends PluginBase implements Listener
    }
 	
 	
-  public function staffMessage(){
-	
-	  $array = $msg;
+  public function staffMessage(PlayerChatEvent $ev){
+	  
 	$array = explode(" ",$msg); 
         array_shift($array); 
         $msg = implode(); 
 	
+	  if($array[0] === ".sc"){
 	  
+	  } 
+	  $msg = $ev->getMessage();
       foreach(Server::getInstance()->getLoggedInPlayers() as $player){
         if($player->hasPermission("hgk.staffchat.see")) $player->sendMessage(TextFormat::RED("$msg"));
-	     TextFormat::colorize("§l§4".$player->getName()." > §r§7".$message); 
-	     $sender-> sendMessage("Message sent to all staff!");
+	     TextFormat::colorize("§l§4".$player->getName()." > §r§7".$message);
     }
   }
         
