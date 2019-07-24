@@ -20,12 +20,15 @@ class main extends PluginBase implements Listener
     }
 	public function onDisable(){
 		
-	}
+   }
+	
   public function staffMessage(){
-  if {($sender-> hasPermission("hgk.staffchat.send"))
-      $sender-> sendMessage("Message sent to all staff!")
-  }
-  else
+	  
+      foreach(Server::getInstance()->getLoggedInPlayers() as $player){
+        if($player->hasPermission("hgk.staffchat.see")) $player->sendMessage(TextFormat::RED("$msg"));
+	     TextFormat::colorize("§l§4".$player->getName()." > §r§7".$message); 
+	     $sender-> sendMessage("Message sent to all staff!");
+    }
   }
         
 }
