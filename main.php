@@ -24,16 +24,12 @@ public function onLoad(){
 	public function onDisable(){
 		$this->getLogger()->info("Plugin Disabled!");
 	}
-  public function onChat(PlayerChatEvent $event)
-    {
-        $msg = $event->getMessage();
-        $UseStaffChat = $this->cfg->get(".sc");
-        $StaffChatMessage = str_ireplace($UseStaffChat, "   ", $msg);
-        $event->setMessage($StaffChatMessage);
-    }
-  public function sendChat {
-  sendMessage("$StaffChatMessage", )
-  
+  public function staffMessage(){
+  if {($sender-> hasPermission("hgk.staffchat.send"))
+      
   }
+  else
+  }
+        
 
 }
