@@ -25,7 +25,7 @@ public function onLoad(){
 	}
   public function staffMessage(){
   if {($sender-> hasPermission("hgk.staffchat.send"))
-      
+      $sender-> sendMessage("Message sent to all staff!")
   }
   else
   }
