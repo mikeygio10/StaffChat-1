@@ -14,10 +14,13 @@ commands:
  sc:
   description: Lets you enable the staff chat.
   usage: "Usage: .sc {message}"
-  permission: hgk.staffchat
+  permission: hgk.staffchat.send
   
   
 permissions:
- hgk.staffchat:
+ hgk.staffchat.send:
   description: "Allows the staff to use the StaffChat"
+  default: false
+ hgk.staffchat.see:
+  description: "Allows Staff to see the StaffChat"
   default: false
