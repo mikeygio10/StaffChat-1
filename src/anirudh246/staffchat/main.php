@@ -1,4 +1,4 @@
-  <?php
+<?php
 namespace anirudh246/StaffChat
 	
 use pocketmine/plugin/PluginBase;
