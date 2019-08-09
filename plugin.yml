@@ -1,7 +1,7 @@
 name: StaffChat
 main: anirudh246/staffchat/main
 version: 1.0.0
-api: [3.9.1]
+api: 3.0.0
 
 
 load: POSTWORLD
