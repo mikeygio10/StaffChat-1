@@ -1,12 +1,12 @@
 <?php
-namespace anirudh246/staffchat;
+namespace anirudh246\staffchat;
 	
-use pocketmine/plugin/PluginBase;
-use pocketmine/event/Listener;
-use pocketmine/event/player/PlayerChatEvent;
-use pocketmine/utils/TextFormat;
-use pocketmine/command/Command;
-use pocketmine/command/CommandSender;
+use pocketmine\plugin\PluginBase;
+use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerChatEvent;
+use pocketmine\utils\TextFormat;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
  
 class main extends PluginBase implements Listener
 {
