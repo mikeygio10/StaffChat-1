@@ -22,16 +22,16 @@ class main extends PluginBase implements Listener
 	
   public function staffMessage(PlayerChatEvent $ev){
 	  
-	$array = explode(" ",$msg); 
+	$array = explode(" ",$message); 
         array_shift($array); 
-        $msg = implode(); 
+        $message = implode(); 
 	
 	  if($array[0] === ".sc"){
 	  
 	  } 
-	  $msg = $ev->getMessage();
+	  $message = $ev->getMessage();
       foreach(Server::getInstance()->getLoggedInPlayers() as $player){
-        if($player->hasPermission("hgk.staffchat.see")) $player->sendMessage(TextFormat::RED("$msg"));
+        if($player->hasPermission("hgk.staffchat.see")) $player->sendMessage(TextFormat::RED("$message"));
 	     TextFormat::colorize("§l§4".$player->getName()." > §r§7".$message);
     }
   }
