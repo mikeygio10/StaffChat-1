@@ -20,7 +20,7 @@ commands:
 permissions:
  hgk.staffchat.send:
   description: "Allows the staff to use the StaffChat"
-  default: false
+  default: op
  hgk.staffchat.see:
   description: "Allows Staff to see the StaffChat"
-  default: false
+  default: op
