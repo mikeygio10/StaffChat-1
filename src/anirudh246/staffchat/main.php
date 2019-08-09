@@ -1,5 +1,5 @@
 <?php
-namespace anirudh246/StaffChat
+namespace anirudh246/staffchat;
 	
 use pocketmine/plugin/PluginBase;
 use pocketmine/event/Listener;
