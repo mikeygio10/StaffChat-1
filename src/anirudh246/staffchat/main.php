@@ -14,7 +14,6 @@ class main extends PluginBase implements Listener
 	}
 	public function onEnable(){
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->getServer()->getScheduler()->scheduleRepeatingTask(new BroadcastPluginTask($this), 120);
     }
 	public function onDisable(){
 		
